@@ -9,9 +9,18 @@ namespace StarterAssets
 
         public void Awake()
         {
+            Value += 5;
         }
 
         public void Update()
+        {
+            if (Value > 10)
+            {
+                Value = 0;
+            }
+        }
+
+        public void OnDestroy()
         {
         }
     }
